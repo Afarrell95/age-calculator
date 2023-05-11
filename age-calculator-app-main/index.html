@@ -19,17 +19,23 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="main-container">
       <div class="inputs">
-        <span>Day</span>
+        <div class="part">
+        <span class="dmy">Day</span>
         <input type="text" />
-        <span>Month</span>
+      </div>
+        <div class="part">
+        <span class="dmy">Month</span>
         <input type="text" />
-        <span>Year</span>
+      </div>
+        <div class="part">
+        <span class="dmy">Year</span>
         <input type="text" />
+      </div>
       </div>
       <div class="devider">
         <div class="line"></div>
@@ -48,9 +54,9 @@
           </svg>
         </div>
         <div class="calculation">
-          <div class="year-calc">69 years</div>
-          <div class="month-calc">69 months</div>
-          <div class="day-calc">69 days</div>
+          <div class="year-calc"><span class="number">69</span> years</div>
+          <div class="month-calc"><span class="number">69</span> months</div>
+          <div class="day-calc"><span class="number">69</span> days</div>
         </div>
       </div>
     </div>
