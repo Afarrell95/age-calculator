@@ -13,26 +13,45 @@
     />
 
     <title>Age calculator app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <div class="container">
-      Day DD Month MM Year YYYY -- years -- months -- days
-
+    <div class="main-container">
+      <div class="inputs">
+        <span>Day</span>
+        <input type="text" />
+        <span>Month</span>
+        <input type="text" />
+        <span>Year</span>
+        <input type="text" />
+      </div>
       <div class="devider">
         <div class="line"></div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="46"
-          height="44"
-          viewBox="0 0 46 44"
-        >
-          <g fill="none" stroke="#FFF" stroke-width="2">
-            <path
-              d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
-            />
-          </g>
-        </svg>
+        <div class="circle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="46"
+            height="44"
+            viewBox="0 0 46 44"
+          >
+            <g fill="none" stroke="#FFF" stroke-width="2">
+              <path
+                d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+              />
+            </g>
+          </svg>
+        </div>
+        <div class="calculation">
+          <div class="year-calc">69 years</div>
+          <div class="month-calc">69 months</div>
+          <div class="day-calc">69 days</div>
+        </div>
       </div>
     </div>
     <script src="/app.js"></script>

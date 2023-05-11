@@ -9,11 +9,29 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Poppins', sans-serif;
 }
 
-.container{
+.main-container{
     background-color: hsl(0, 0%, 100%);
     width: 60%;
     padding: 2em;
     border-radius: 15px 15px 50px 15px;
+}
+
+.line{
+    background-color: hsl(0, 0%, 86%);
+    width:80%;
+    height: 1px;
+}
+
+.circle{
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 500px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .7em;
 }
