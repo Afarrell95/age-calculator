@@ -26,15 +26,15 @@
       <div class="inputs">
         <div class="part">
           <span class="dmy">Day</span>
-          <input type="text" placeholder="dd" />
+          <input class="day-input" type="text" placeholder="dd" />
         </div>
         <div class="part">
           <span class="dmy">Month</span>
-          <input type="text" placeholder="mm" />
+          <input class="month-input" type="text" placeholder="mm" />
         </div>
         <div class="part">
           <span class="dmy">Year</span>
-          <input type="text" placeholder="yyyy" />
+          <input class="year-input" type="text" placeholder="yyyy" />
         </div>
       </div>
       <div class="divider">
@@ -55,9 +55,15 @@
         </div>
       </div>
       <div class="calculation">
-        <div class="year-calc"><span class="number">- -</span> years</div>
-        <div class="month-calc"><span class="number">- -</span> months</div>
-        <div class="day-calc"><span class="number">- -</span> days</div>
+        <div class="year-calc">
+          <span class="number number-year">- -</span> years
+        </div>
+        <div class="month-calc">
+          <span class="number number-month">- -</span> months
+        </div>
+        <div class="day-calc">
+          <span class="number number-day">- -</span> days
+        </div>
       </div>
     </div>
     <script src="/app.js"></script>
