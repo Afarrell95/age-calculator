@@ -97,6 +97,15 @@ input:hover{
     color:hsl(259, 100%, 65%);
 }
 
+.required{
+    color: red;
+    font-size: .7rem;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: .6em;
+    display: none;
+}
+
 @media screen and (max-width:980px){
 
     .main-container{
