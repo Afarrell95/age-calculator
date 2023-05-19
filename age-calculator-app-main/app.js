@@ -10,7 +10,9 @@ button.addEventListener("click", (e) => {
   let yearInput = document.querySelector(".year-input").value;
   let yearDisplay = document.querySelector(".number-year");
   let monthDisplay = document.querySelector(".number-month");
-  let dayDisplay = document.querySelector(".number-day");
+  let dayDisplay = document.querySelector(".number-day"); 
+
+  validate()
 
   let date = new Date();
   let currentD = date.getDate();
@@ -33,16 +35,23 @@ button.addEventListener("click", (e) => {
   yearDisplay.innerHTML = y;
   monthDisplay.innerHTML = m;
   dayDisplay.innerHTML = d;
-
-  console.log(dayInput);
-  console.log(monthInput);
-  console.log(yearInput);
 });
 
-// function validate() {
-//   let reqDay = document.querySelector(".required_day");
-//   let reqMonth = document.querySelector(".required_month");
-//   let reqYear = document.querySelector(".required_year");
-
-//   if()
-// }
+function validate() {
+  let dayInput = document.querySelector(".day-input").value;
+  let monthInput = document.querySelector(".month-input").value;
+  let yearInput = document.querySelector(".year-input").value;
+  let reqDay = document.querySelector(".required_day");
+  let reqMonth = document.querySelector(".required_month");
+  let reqYear = document.querySelector(".required_year");
+  let border = document.querySelector(".input");
+  let text = document.querySelector(".dmy");
+ 
+  if(dayInput === '' || monthInput === '' || yearInput === ''){
+    reqDay.style.display = 'block';
+    reqMonth.style.display = 'block';
+    reqYear.style.display = 'block';
+    border.style.border= 'solid 1px red';
+    text.style.color = 'red';
+  }
+}
