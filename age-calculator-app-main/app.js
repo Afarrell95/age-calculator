@@ -55,7 +55,7 @@ function validate() {
   let reqDay = document.querySelector(".required_day");
   let reqMonth = document.querySelector(".required_month");
   let reqYear = document.querySelector(".required_year");
-  let borders = document.getElementById("#inputs");
+  let borders = document.querySelectorAll("#inputs");
   let text = document.querySelectorAll(".dmy");
  
   if(dayInput === '' || monthInput === '' || yearInput === ''){
