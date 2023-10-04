@@ -15,13 +15,13 @@ button.addEventListener("click", (e) => {
   let reqMonth = document.querySelector(".required_month");
   let reqYear = document.querySelector(".required_year");
   let border = document.querySelector("input");
-  let text = document.querySelector(".dmy"); 
+  let text = document.querySelector(".dmy");
 
-  reqDay.style.display = '';
-  reqMonth.style.display = '';
-  reqYear.style.display = '';
-  border.style.border= '';
-  text.style.color = '';
+  reqDay.style.display = "";
+  reqMonth.style.display = "";
+  reqYear.style.display = "";
+  border.style.border = "";
+  text.style.color = "";
 
   validate();
 
@@ -57,12 +57,15 @@ function validate() {
   let reqYear = document.querySelector(".required_year");
   let borders = document.querySelectorAll("#inputs");
   let text = document.querySelectorAll(".dmy");
- 
-  if(dayInput === '' || monthInput === '' || yearInput === ''){
-    reqDay.style.display = 'block';
-    reqMonth.style.display = 'block';
-    reqYear.style.display = 'block';
-    borders.style.border= 'solid 1px red';
-    text.style.color = 'red';
+
+  if (dayInput === "") {
+    reqDay.style.display = "block";
+  }
+  if (monthInput === "") {
+    reqMonth.style.display = "block";
+  }
+
+  if (yearInput === "") {
+    reqYear.style.display = "block";
   }
 }
